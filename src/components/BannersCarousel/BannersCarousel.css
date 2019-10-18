@@ -68,6 +68,11 @@
     height: 7px;
     width: 7px;
   }
+
+  .BannersCarousel-carousel .CarouselArrows--container {
+    width: 12px;
+    height: 20px;
+  }
  }
  
 
