@@ -157,11 +157,6 @@ export const setGeneralSiteInfo = () => {
           type: HANDLE_SPORT_MODAL,
           payload: { open: false }
         });
-      } else if (getState().siteState.cityModalOpen === false && getState().siteState.selected_sport === null) {
-        dispatch({
-          type: HANDLE_SPORT_MODAL,
-          payload: { open: true }
-        });
       }
       dispatch(apiLoading());
       const response = await api.siteInfo(cityValue, sportValue);
