@@ -147,6 +147,10 @@
     width: calc(110.45px * 0.75);
     height: calc(62.08px * 0.75);
   }
+
+  .Header--offersIcon > *:last-child {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 470px) {
