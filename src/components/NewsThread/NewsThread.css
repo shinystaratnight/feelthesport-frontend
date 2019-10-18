@@ -1,0 +1,27 @@
+.NewsThread--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NewsThread--container > * {
+  margin-bottom: 15px;
+}
+
+.NewsThread--button {
+  margin-bottom: 0;
+  margin-top: 30px;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .NewsThread--button {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .NewsThread--button {
+    font-size: 20px;
+  }
+}

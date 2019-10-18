@@ -1,0 +1,121 @@
+.BookNPlayCard--container {
+  box-sizing: border-box;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-big);
+  max-width: 877px;
+  text-align: center;
+}
+
+.BookNPlayCard--container > * {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BookNPlayCard--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.BookNPlayCard--top > *:not(:last-child) {
+  margin-right: var(--space-small);
+}
+
+.BookNPlayCard--middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BookNPlayCard--middle > *:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.BookNPlayCard--middle > *:first-child > *:first-child {
+  margin-right: var(--space-small);
+}
+
+.BookNPlayCard--bottom > * {
+  width: 100%;
+}
+
+.BookNPlayCard--bottom > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BookNPlayCard--bottom > *:first-child {
+  margin-right: var(--space-small);
+}
+
+.BookNPlayCard--bottom > *:first-child > *:first-child {
+  margin-right: var(--space-small);
+}
+.BookNPlayCard--bottom > *:last-child > *:last-child {
+  margin-left: var(--space-small);
+}
+
+@media (max-width: 1440px) {
+  .BookNPlayCard--bottom {
+    flex-direction: column;
+  }
+  .BookNPlayCard--bottom > * {
+    justify-content: center;
+  }
+
+  .BookNPlayCard--bottom > *:first-child {
+    margin-bottom: var(--space-medium);
+  }
+  .BookNPlayCard--bottom > *:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .BookNPlayCard--top {
+    flex-direction: column;
+  }
+
+  .BookNPlayCard--top > *:not(:last-child) {
+    margin-bottom: var(--space-small);
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .BookNPlayCard--bottom > * > * {
+    width: 150px;
+  }
+}
+
+@media (max-width: 470px) {
+  .BookNPlayCard--bottom > * {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .BookNPlayCard--bottom > * > * {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .BookNPlayCard--bottom > * > *:not(:last-child) {
+    margin-bottom: var(--space-small);
+  }
+
+  .BookNPlayCard--middle {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BookNPlayCard--middle > *:not(:last-child) {
+    order: 1;
+  }
+}

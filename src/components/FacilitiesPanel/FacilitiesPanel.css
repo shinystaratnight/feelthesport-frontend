@@ -1,0 +1,21 @@
+.FacilitiesPanel--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-row-gap: var(--space-medium);
+  grid-column-gap: var(--space-medium);
+}
+
+.FacilitiesPanel--facility {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  justify-items: center;
+  align-items: start;
+  text-align: center;
+}
+
+.FacilitiesPanel--facility > *:first-child {
+  height: 85px;
+  width: 85px;
+  margin-bottom: var(--space-medium);
+}

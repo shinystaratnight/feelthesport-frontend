@@ -1,0 +1,20 @@
+.AboutStats--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.AboutStats--container > * > *:first-child {
+  font-size: 64px;
+}
+
+@media (min-width: 768px) {
+  .AboutStats--container {
+    flex-direction: row;
+  }
+  .AboutStats--container > * > *:first-child {
+    font-size: 100px;
+  }
+}

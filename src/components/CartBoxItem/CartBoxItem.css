@@ -1,0 +1,198 @@
+.CartBoxItem--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin: var(--space-medium); */
+}
+
+.CartBoxItem--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.CartBoxItem--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CartBoxItem--garbage {
+  width: 29px;
+  height: 33px;
+}
+
+.CartBoxItem--type1 > *:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CartBoxItem--type1 > *:first-child > *:not(:last-child) {
+  margin-right: var(--space-small);
+}
+/* .CartBoxItem--type1 > *:first-child > *:last-child {
+  margin-left: var(--space-small);
+} */
+
+.CartBoxItem--type1 > *:last-child > *:last-child {
+  cursor: pointer;
+  user-select: none;
+}
+
+.CartBoxItem--type1 > *:first-child > *:nth-child(2) {
+  text-align: center;
+}
+
+.CartBoxItem--type1 > *:first-child > *:nth-child(2) > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.CartBoxItem--type2 > *:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.CartBoxItem--type2 > *:last-child > *:last-child {
+  cursor: pointer;
+  user-select: none;
+}
+
+.CartBoxItem--type3 > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CartBoxItem--type3 > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.CartBoxItem--type3 > *:last-child {
+  align-self: flex-end;
+}
+
+.CartBoxItem--bookingRow {
+  width: 60%;
+}
+
+.CartBoxItem--bookingRow > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartBoxItem--bookingRow > * > *:first-child {
+  border: 1px solid #565656;
+  border-radius: 5px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.CartBoxItem--bookingRow > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.CartBoxItem--sport {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.CartBoxItem--sport > img {
+  width: 53px;
+  height: 53px;
+  margin-right: var(--space-small);
+}
+
+@media (max-width: 1024px) {
+  .CartBoxItem--middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .CartBoxItem--middle > *:not(:last-child) {
+    margin-bottom: var(--space-medium);
+  }
+
+  .CartBoxItem--bookingRow {
+    width: 100%;
+  }
+
+  .CartBoxItem--type1 > *:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CartBoxItem--type1 > *:first-child > * {
+    margin: 0 !important;
+    margin-bottom: var(--space-medium) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .CartBoxItem--type3 > *:last-child {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .CartBoxItem--bookingRow > * > *:nth-child(1) {
+    width: 200px;
+  }
+
+  .CartBoxItem--type3 > * {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CartBoxItem--type3 > * > *:not(:last-child) {
+    margin-bottom: var(--space-small);
+  }
+}
+
+@media (max-width: 500px) {
+  .CartBoxItem--bookingRow > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  .CartBoxItem--bookingRow > * > *:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .CartBoxItem--bookingRow > * > *:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+  .CartBoxItem--bookingRow > * > *:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: end;
+    height: auto;
+    margin-top: var(--space-small);
+  }
+
+  .CartBoxItem--bookingRow .invisible {
+    height: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .CartBoxItem--bookingRow > * > *:nth-child(1) {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+}

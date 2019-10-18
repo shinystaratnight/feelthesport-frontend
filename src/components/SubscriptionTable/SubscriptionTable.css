@@ -1,0 +1,59 @@
+.SubscriptionTable--container {
+  border: 3px solid var(--color-lightOrange);
+}
+
+.SubscriptionTable--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-lightOrange);
+  padding: var(--space-small) var(--space-medium);
+}
+
+.SubscriptionTable--arrow {
+  cursor: pointer;
+}
+
+.SubscriptionTable--priceTime {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr;
+  /* align-items: center; */
+  padding-top: var(--space-medium);
+  padding-bottom: var(--space-small);
+  text-align: center;
+}
+
+.SubscriptionTable--priceTime > *:first-child {
+  grid-column: 2/3;
+}
+.SubscriptionTable--priceTime > *:last-child {
+  grid-column: 3/4;
+}
+
+@media (max-width: 1024px) {
+  .SubscriptionTable--priceTime {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .SubscriptionTable--header > * {
+    font-size: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .SubscriptionTable--header > * {
+    font-size: 22px;
+  }
+}
+@media (max-width: 365px) {
+  .SubscriptionTable--header > * {
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .SubscriptionTable--header > * {
+    font-size: 18px;
+  }
+}

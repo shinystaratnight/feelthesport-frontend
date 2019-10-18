@@ -1,0 +1,6 @@
+.StarRadioButtons--star {
+  height: 30px;
+  width: 30px !important;
+  margin-right: 15px;
+  cursor: pointer;
+}

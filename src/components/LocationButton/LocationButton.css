@@ -1,0 +1,94 @@
+.LocationButton--container {
+  background-color: var(--color-white);
+  height: 40px;
+  max-width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.LocationButton--container > img {
+  height: 30px;
+  width: 30px;
+}
+
+.LocationButton--tooltipTheme {
+  background-color: var(--color-darkOrange) !important;
+  color: var(--color-white) !important;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* .LocationButton--container {
+  background-color: var(--color-darkOrange);
+  height: 33px;
+  max-width: 33px;
+  width: auto;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: max-width 0.25s ease-in-out;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.LocationButton--container:hover {
+  max-width: 130px;
+}
+
+.LocationButton--text {
+  padding-left: 40px;
+  padding-right: 10px;
+  cursor: text;
+  font-size: 13px;
+}
+
+.LocationButton--imageContainer {
+  height: 33px;
+  width: 33px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.LocationButton--container img {
+  height: 30px;
+  width: 30px;
+  height: 26px;
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .LocationButton--container:hover {
+    max-width: 300px;
+  }
+  .LocationButton--text {
+    font-size: 14px;
+  }
+}
+
+.customeTheme {
+  background-color: var(--color-darkOrange) !important;
+  color: var(--color-white) !important;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+} */

@@ -1,0 +1,103 @@
+.Modal--modal {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* position: fixed; */
+  height: auto;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  /* transform: translate(-50%, 50%); */
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  animation: modalOpenAnimation 0.4s;
+}
+
+.Modal--shade {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  user-select: none;
+  cursor: pointer;
+  animation: shadeOpenAnimation 0.4s;
+}
+
+.Modal--child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.Modal--closeBar {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+  user-select: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--color-white);
+}
+.Modal--closeBar > * {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+.Modal--modalClosing {
+  animation: modalCloseAnimation 0.4s;
+}
+
+.Modal--shadeClosing {
+  animation: shadeCloseAnimation 0.4s;
+}
+
+@keyframes modalOpenAnimation {
+  from {
+    transform: translate(-50%, -200%);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shadeOpenAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modalCloseAnimation {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(-50%, -350%);
+  }
+}
+
+@keyframes shadeCloseAnimation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

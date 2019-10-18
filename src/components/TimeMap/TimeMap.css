@@ -1,0 +1,62 @@
+.TimeMap--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 510px;
+}
+
+.TimeMap--container > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TimeMap--container > *:nth-child(1) > *:first-child {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+}
+
+.TimeMap--container > *:nth-child(2) > *:first-child {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-color: var(--color-darkOrange);
+  border: 1px solid var(--color-black);
+}
+
+.TimeMap--container > *:nth-child(3) > *:first-child {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-color: var(--color-green);
+  border: 1px solid var(--color-black);
+}
+
+.TimeMap--container > *:nth-child(4) > *:first-child {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-color: #e1dddd;
+  border: 1px solid var(--color-black);
+}
+
+@media (max-width: 650px) {
+  .TimeMap--container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    grid-row-gap: var(--space-small);
+  }
+}
+
+@media (max-width: 390px) {
+  .TimeMap--container {
+    grid-template-columns: 1fr;
+  }
+}

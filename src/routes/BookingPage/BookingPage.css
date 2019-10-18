@@ -1,0 +1,113 @@
+.BookingPage--container {
+  background-color: var(--color-lightGray);
+  padding: var(--space-big) var(--space-huge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.BookingPage--container > main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.BookingPage--container > main > *:not(:first-child) {
+  width: 100%;
+  padding: var(--space-medium) var(--space-big);
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.BookingPage--container > main > *:first-child > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.BookingPage--container > main > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.BookingPage--info {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  place-items: center;
+  align-content: center;
+}
+
+.BookingPage--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BookingPage--nav > * {
+  cursor: pointer;
+}
+
+.BookingPage--activeTab {
+  border-bottom: 3px solid var(--color-lightOrange);
+  padding-bottom: var(--space-tiny);
+}
+
+.BookingPage--totalCost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.BookingPage--totalCost > *:first-child {
+  align-self: flex-end;
+}
+
+.BookingPage--totalCost > *:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.BookingPage--totalCost > *:nth-child(2) > *:first-child {
+  margin-bottom: var(--space-big);
+}
+
+.BookingPage--totalCost > *:nth-child(2) > *:last-child {
+  align-self: center;
+}
+
+.BookingPage--membership > *:not(:last-child) {
+  margin-bottom: var(--space-big);
+}
+
+@media (max-width: 1200px) {
+  .BookingPage--info {
+    grid-template-columns: repeat(2, auto);
+    grid-row-gap: var(--space-small);
+  }
+}
+
+@media (max-width: 768px) {
+  .BookingPage--info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .BookingPage--totalCost {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .BookingPage--totalCost > *:first-child {
+    align-self: flex-start;
+    margin-top: var(--space-big);
+  }
+}

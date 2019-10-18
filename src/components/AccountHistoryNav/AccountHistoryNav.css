@@ -1,0 +1,13 @@
+.AccountHistoryNav--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-tiny);
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.AccountHistoryNav--container > * {
+  cursor: pointer;
+  font-weight: 500;
+}

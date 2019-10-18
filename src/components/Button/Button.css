@@ -1,0 +1,214 @@
+.Button--container {
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  transition: background-color 0.25s ease-in-out;
+
+  /* padding: 20px 25px; */
+}
+
+.Button--border {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.Button--skewButton {
+  transform: skew(-20deg);
+  /* padding: 15px 30px; */
+}
+
+.Button--skewButton > * {
+  transform: skew(20deg);
+  /* padding: 15px 30px; */
+}
+
+.Button--unskewText {
+  transform: skew(20deg, 0deg);
+}
+
+.Button--roundButton {
+  border-radius: 20px;
+}
+
+.Button--type--button1 {
+  /* height: 63px; */
+  height: 47px;
+  min-width: 218px;
+  /* padding: 15px 30px; */
+  /* padding: 0px 16px; */
+  padding: 0px 23px;
+  /* padding: 11px 23px; */
+}
+
+.Button--type--button2 {
+  height: 35px;
+  min-width: 177px;
+  padding: 0px 19px;
+  /* padding: 8px 19px; */
+}
+
+.Button--type--button3 {
+  height: 44px;
+  min-width: 135px;
+  padding: 6px 12px;
+}
+
+.Button--type--button4 {
+  height: 30px;
+  min-width: 131px;
+  padding: 0px 12px;
+}
+
+.Button--type--button5 {
+  height: 37px;
+  min-width: 85px;
+  /* padding: 6px 12px; */
+  padding: 0px 12px;
+}
+
+.Button--type--button6 {
+  height: 35px;
+  min-width: 85px;
+  padding: 0px 12px;
+}
+
+.Button--type--button7 {
+  height: 30px;
+  min-width: 85px;
+}
+
+.Button--backgroundColor--white {
+  background-color: var(--color-white);
+}
+.Button--backgroundColor--black {
+  background-color: var(--color-black);
+}
+.Button--backgroundColor--gray {
+  background-color: var(--color-gray);
+}
+.Button--backgroundColor--lightOrange {
+  background-color: var(--color-lightOrange);
+}
+.Button--backgroundColor--darkOrange {
+  background-color: var(--color-darkOrange);
+}
+.Button--backgroundColor--blue {
+  background-color: var(--color-blue);
+}
+.Button--backgroundColor--green {
+  background-color: var(--color-green);
+}
+.Button--backgroundColor--facebook {
+  background-color: var(--color-facebookBlue);
+}
+.Button--backgroundColor--gmail {
+  background-color: var(--color-red);
+}
+.Button--backgroundColor--transparent {
+  background-color: var(--color-transparent);
+}
+
+.Button--borderColor--white {
+  border-color: var(--color-white);
+}
+.Button--borderColor--black {
+  border-color: var(--color-black);
+}
+.Button--borderColor--gray {
+  border-color: var(--color-gray);
+}
+.Button--borderColor--lightOrange {
+  border-color: var(--color-lightOrange);
+}
+.Button--borderColor--darkOrange {
+  border-color: var(--color-darkOrange);
+}
+.Button--borderColor--blue {
+  border-color: var(--color-blue);
+}
+.Button--borderColor--green {
+  border-color: var(--color-green);
+}
+
+.Button--hideButtonText {
+  display: none;
+}
+
+.Button--container img {
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+}
+
+.Button--hasIcon {
+  height: 50px;
+  min-height: 50px;
+  width: 50px;
+  min-width: 50px;
+}
+
+@media (min-width: 768px) {
+  .Button--type--button1 {
+    height: 63px;
+    /* width: 350px; */
+    /* min-width: 350px; */
+    /* min-width: 280px; */
+    min-width: 290px;
+    padding: 0px 30px;
+    /* padding: 15px 30px; */
+  }
+
+  .Button--type--button2 {
+    height: 47px;
+    min-width: 236px;
+  }
+
+  .Button--type--button3 {
+    height: 50px;
+    /* height: 59px; */
+    min-width: 170px;
+    /* min-width: 180px; */
+  }
+
+  .Button--type--button4 {
+    height: 42px;
+    min-width: 180px;
+  }
+
+  .Button--type--button5 {
+    height: 37px;
+    min-width: 85px;
+    padding: 0px 12px;
+  }
+
+  .Button--type--button6 {
+    height: 35px;
+    min-width: 85px;
+    padding: 0px 12px;
+  }
+
+  .Button--type--button7 {
+    height: 30px;
+    min-width: 85px;
+  }
+
+  .Button--container img {
+    margin-right: 10px;
+  }
+}

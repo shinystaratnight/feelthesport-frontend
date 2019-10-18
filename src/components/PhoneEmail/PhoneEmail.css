@@ -1,0 +1,28 @@
+.PhoneEmail--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: inherit;
+}
+
+.PhoneEmail--container > *:first-child {
+  width: 30px;
+  height: 30px;
+  margin-right: var(--space-small);
+}
+
+.PhoneEmail--container a {
+  word-break: break-all !important;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  .PhoneEmail--container a {
+    font-size: 16px;
+  }
+}
+
+.PhoneEmail--container a:hover {
+  text-decoration: none;
+}

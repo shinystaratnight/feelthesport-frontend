@@ -1,0 +1,52 @@
+.RegistrationFormParticipant--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.RegistrationFormParticipant--container > *:first-child {
+  text-align: center;
+}
+
+.RegistrationFormParticipant--form > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.RegistrationFormParticipant--field {
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: var(--space-tiny);
+}
+
+.RegistrationFormParticipant--noBorder {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.RegistrationFormParticipant--redBorder {
+  border-bottom: 1px solid var(--color-red);
+}
+
+.RegistrationFormParticipant--selectError {
+  border: 1px solid var(--color-red) !important;
+}
+
+.RegistrationFormParticipant--field > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.RegistrationFormParticipant--field > *:last-child {
+  outline: 0;
+  border: 0;
+  width: 100%;
+}
+
+/* .RegistrationFormParticipant--field > input[type="text"] {
+  outline: 0;
+  border: 0;
+  width: 100%;
+}
+
+.RegistrationFormParticipant--field > input[type="date"] {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  background-color: #fff;
+} */

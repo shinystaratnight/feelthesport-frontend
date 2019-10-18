@@ -1,0 +1,126 @@
+.SelectSport--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 0 var(--space-medium) var(--space-medium) var(--space-medium);
+}
+
+.SelectSport--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.SelectSport--container > *:last-child {
+  margin-top: var(--space-medium);
+}
+
+.SelectSport--container > *:first-child {
+  width: 154px;
+  height: 45px;
+  height: 63px;
+  border-bottom: 3px solid var(--color-lightOrange);
+}
+
+.SelectSport--sport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+
+.SelectSport--sport > *:first-child {
+  width: 37px;
+  height: 37px;
+  margin-bottom: var(--space-tiny);
+}
+
+.SelectSport--category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.SelectSport--category > *:first-child {
+  border-bottom: 2px solid #a8a8a8;
+  padding-bottom: var(--space-tiny);
+  margin-bottom: var(--space-small);
+  width: 100%;
+}
+
+.SelectSport--category > *:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.SelectSport--category > *:last-child > *:not(:last-child) {
+
+}
+
+.SelectSport--rows > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.SelectSport--sport:hover > *:last-child {
+  text-decoration: underline;
+}
+
+
+.SelectSport--sport.its_selected{
+  background: var(--color-lightOrange);
+}
+
+
+.SelectSport--sport.its_selected p{
+  color: white;
+}
+
+
+
+
+@media (min-width: 300px) {
+  .SelectSport--container
+  {
+    min-width: 250px;
+  }
+}
+@media (min-width: 400px) {
+  .SelectSport--container
+  {
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 600px) {
+  .SelectSport--container
+  {
+    min-width: 500px;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .SelectSport--container
+  {
+    min-width: 600px;
+  }
+}
+
+@media (min-width: 800px) {
+  .SelectSport--container
+  {
+    min-width: 700px;
+  }
+}
+
+@media (max-width:500px) {
+  .SelectSport--sport {
+    padding: 12px 10px;
+  }
+}

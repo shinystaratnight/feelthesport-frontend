@@ -1,0 +1,48 @@
+.AccountHistoryTabRow--container {
+  padding-left: var(--space-tiny);
+  padding-right: var(--space-tiny);
+  padding-top: var(--space-medium);
+}
+
+.AccountHistoryTabRow--container > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.AccountHistoryTabRow--container > *:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AccountHistoryTabRow--container > *:nth-child(2) {
+  margin-bottom: var(--space-medium);
+}
+.AccountHistoryTabRow--container
+  > *:nth-child(2)
+  > *:first-child
+  > *:not(:last-child),
+.AccountHistoryTabRow--container
+  > *:nth-child(2)
+  > *:last-child
+  *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.AccountHistoryTabRow--container > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.AccountHistoryTabRow--container > *:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: var(--space-medium); */
+  padding-bottom: var(--space-small);
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.AccountHistoryTabRow--container > *:last-child > * {
+  cursor: pointer;
+}

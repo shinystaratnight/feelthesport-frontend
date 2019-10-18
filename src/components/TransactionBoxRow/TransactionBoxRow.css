@@ -1,0 +1,25 @@
+.TransactionBoxRow--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.TransactionBoxRow--bookaslot > *:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.TransactionBoxRow--border {
+  border-bottom: 3px solid #ebe8e8;
+  margin: 0 var(--space-huge);
+}
+
+@media (max-width: 600px) {
+  .TransactionBoxRow--bookaslot > *:first-child {
+    flex-direction: column;
+  }
+  .TransactionBoxRow--bookaslot > *:first-child > *:first-child {
+    margin-bottom: var(--space-small);
+  }
+}

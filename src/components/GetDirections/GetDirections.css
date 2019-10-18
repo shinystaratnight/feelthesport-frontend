@@ -1,0 +1,13 @@
+.GetDirections--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.GetDirections--container > *:first-child {
+  width: 30px;
+  height: 30px;
+  margin-right: var(--space-small);
+}

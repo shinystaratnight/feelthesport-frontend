@@ -1,0 +1,35 @@
+.FiltersPrice--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.FiltersPrice--inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FiltersPrice--inputs > * {
+  position: relative;
+}
+
+.FiltersPrice--inputs > * > input {
+  width: 107px;
+  height: 37px;
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+.FiltersPrice--fromto {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  z-index: 1;
+}
+
+.FiltersPrice--range {
+  width: 242px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

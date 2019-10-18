@@ -1,0 +1,47 @@
+.TimeGrid--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-row-gap: var(--space-small);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.TimeGrid--container > * {
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  width: 266px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.TimeGrid--selected {
+  color: var(--color-white);
+  background-color: var(--color-darkOrange);
+}
+
+.TimeGrid--unavailable {
+  color: var(--color-black);
+  background-color: #e1dddd;
+}
+
+.TimeGrid--inProcess {
+  color: var(--color-black);
+  background-color: var(--color-green);
+}
+
+@media (max-width: 420px) {
+  .TimeGrid--container {
+    grid-template-columns: minmax(280px, 1fr);
+    justify-content: center;
+  }
+
+  .TimeGrid--container > * {
+    width: 200px;
+  }
+}

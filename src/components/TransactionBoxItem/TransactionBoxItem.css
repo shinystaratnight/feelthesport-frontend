@@ -1,0 +1,48 @@
+.TransactionBoxItem--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TransactionBoxItem--container > *:not(:last-child) {
+  margin-right: var(--space-small);
+}
+
+.TransactionBoxItem--container > *:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-row-gap: var(--space-small);
+  grid-column-gap: var(--space-medium);
+  width: 40%;
+  justify-items: center;
+  align-items: center;
+}
+
+.TransactionBoxItem--container > *:last-child {
+  visibility: hidden;
+}
+
+.TransactionBoxItem--container > .TransactionBoxItem--showCost {
+  visibility: visible;
+}
+
+@media (max-width: 790px) {
+  .TransactionBoxItem--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .TransactionBoxItem--container > *:first-child {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .TransactionBoxItem--container > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: var(--space-medium);
+  }
+  .TransactionBoxItem--container > *:nth-child(2) {
+    width: 100%;
+  }
+}

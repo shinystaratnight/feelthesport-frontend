@@ -1,0 +1,78 @@
+.TimeSlotsBox--container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.TimeSlotsBox--container > *:not(:last-child) {
+  margin-bottom: var(--space-big);
+}
+
+.TimeSlotsBox--name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.TimeSlotsBox--price {
+  align-self: flex-end;
+  width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TimeSlotsBox--price > *:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TimeSlotsBox--price > *:first-child > *:first-child {
+  margin-right: var(--space-small);
+}
+
+@media (max-width: 850px) {
+  .TimeSlotsBox--price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .TimeSlotsBox--price > *:first-child {
+    margin-bottom: var(--space-small);
+  }
+}
+
+@media (max-width: 1200px) {
+  .TimeSlotsBox--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .TimeSlotsBox--name > *:first-child {
+    margin-bottom: var(--space-small);
+  }
+}
+
+@media (max-width: 420px) {
+  .TimeSlotsBox--price > *:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .TimeSlotsBox--price > *:first-child > *:first-child {
+    margin-bottom: var(--space-small);
+  }
+}

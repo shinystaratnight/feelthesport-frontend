@@ -1,0 +1,49 @@
+.CarouselArrows--container {
+  width: 17px;
+  height: 35px;
+}
+
+.OffersCarousel--container .CarouselArrows--container.slick-prev{
+  left: -35px;
+}
+
+.OffersCarousel--container .CarouselArrows--container.slick-next{
+  right: -35px;
+}
+
+.BannersCarousel--container .CarouselArrows--container {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+.BannersCarousel--container .CarouselArrows--container.slick-prev:before,
+.BannersCarousel--container .CarouselArrows--container.slick-next:before{
+  display: none;
+}
+
+.BannersCarousel--container .CarouselArrows--container.slick-prev,
+.BannersCarousel--container .CarouselArrows--container.slick-next{
+  z-index: 1;
+}
+
+.BannersCarousel--container .CarouselArrows--container.slick-prev{
+  left: 50px;
+}
+.BannersCarousel--container .CarouselArrows--container.slick-next{
+  right: 50px;
+}
+
+@media  (max-width: 768px ){
+  .BannersCarousel--container  .CarouselArrows--container.slick-prev > svg,.CarouselArrows--container.slick-next > svg{
+    height: 20px;
+  }
+  .BannersCarousel--container  .CarouselArrows--container.slick-prev{
+    left: 25px;
+  }
+  .BannersCarousel--container  .CarouselArrows--container.slick-next{
+    right: 25px;
+  }
+}
+
+
+

@@ -1,0 +1,28 @@
+.AccountNav--container {
+  padding: var(--space-big) var(--space-medium);
+  list-style: none;
+}
+
+.AccountNav--container > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.AccountNav--container > * > * {
+  width: 100%;
+}
+
+.AccountNav--container > * > svg {
+  justify-self: flex-end;
+  width: 20px;
+  height: 28px;
+  position: relative;
+  bottom: 1px;
+}
+
+.AccountNav--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}

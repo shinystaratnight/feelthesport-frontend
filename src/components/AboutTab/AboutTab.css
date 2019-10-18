@@ -1,0 +1,9 @@
+.AboutTab--offersButton {
+  align-self: center;
+}
+
+@media (max-width: 425px) {
+  .AboutTab--offersButton {
+    font-size: 20px;
+  }
+}

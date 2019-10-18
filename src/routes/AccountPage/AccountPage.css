@@ -1,0 +1,32 @@
+.AccountPage--container {
+  background-color: var(--color-lightGray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-big) var(--space-huge);
+}
+
+.AccountPage--container > * {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountPage--container > main {
+  display: flex;
+  flex-direction: row;
+}
+
+.AccountPage--container > main > *:first-child {
+  width: 340px;
+  height: 505px;
+  margin-right: var(--space-medium);
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.AccountPage--container > main > *:last-child {
+  width: 880px;
+  /* use flex basis instead ^ */
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

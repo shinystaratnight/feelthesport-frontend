@@ -1,0 +1,85 @@
+.PriceTime--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PriceTime--price {
+  margin-bottom: 15px;
+  margin-top: -15px;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--color-lightGray);
+}
+
+.PriceTime--price > * {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 28px;
+}
+
+.PriceTime--time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.PriceTime--openClose {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.PriceTime--openClose > * {
+  margin-bottom: 15px;
+}
+
+.PriceTime--openClose > *,
+.PriceTime--openClose > * > * {
+  text-align: center;
+  text-transform: none;
+}
+
+.PriceTime--availableDays {
+  margin-bottom: 0;
+}
+
+@media (min-width: 425px) {
+  .PriceTime--openClose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .PriceTime--openClose > * {
+    margin: 0 15px 15px 15px;
+  }
+  .PriceTime--price > * {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .PriceTime--container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+
+  .PriceTime--openClose > * {
+    margin: 0 30px 15px 30px;
+  }
+
+  .PriceTime--price {
+    margin-top: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-right: 3px solid var(--color-lightGray);
+  }
+}

@@ -1,0 +1,66 @@
+.ClubsCard--container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 855px;
+  max-height: 435px;
+  background-color: var(--color-black);
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "image image image image image"
+    "name name name button button";
+}
+
+.ClubsCard--image {
+  grid-area: image;
+  height: 100%;
+  width: 100%;
+  /* max-width: 855px; */
+  object-fit: cover;
+}
+
+.ClubsCard--locationButton {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: var(--space-medium);
+  margin-top: var(--space-medium);
+}
+
+.ClubsCard--notification {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  justify-self: end;
+  margin-right: var(--space-medium);
+  margin-top: var(--space-medium);
+  cursor: pointer;
+}
+
+.ClubsCard--name {
+  grid-area: name;
+  padding: var(--space-small) var(--space-medium);
+  align-self: center;
+}
+
+.ClubsCard--button {
+  grid-area: button;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 425px) {
+  .ClubsCard--container {
+    grid-template-rows: 2fr 1fr 0.75fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image image image image image"
+      "name name name name name"
+      "button button button button button";
+  }
+  .ClubsCard--button {
+    margin-left: 0;
+    margin-left: var(--space-medium);
+    justify-self: start;
+    align-self: center;
+  }
+}

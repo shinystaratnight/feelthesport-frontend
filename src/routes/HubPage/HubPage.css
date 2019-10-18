@@ -1,0 +1,116 @@
+.HubPage--container {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-big) var(--space-huge);
+  background-color: var(--color-lightGray);
+  min-height: 100vh; */
+
+  background-color: var(--color-lightGray);
+  padding: var(--space-big) var(--space-huge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* .HubPage--container > * {
+} */
+
+/* .HubPage--top {
+} */
+
+.HubPage--spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.HubPage--bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  flex-grow: 1;
+}
+
+.HubPage--top,
+.HubPage--left,
+.HubPage--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.HubPage--left {
+  flex: 1 1 auto;
+}
+
+.HubPage--right {
+  /* align-items: center; */
+  align-items: stretch;
+}
+
+.HubPage--right > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+.HubPage--top > * {
+  margin-bottom: var(--space-small);
+}
+
+.HubPage--left > *:first-child {
+  margin-bottom: var(--space-medium);
+}
+
+.HubPage--left {
+  margin-right: var(--space-big);
+}
+
+.HubPage--right-FiltersButton {
+  display: none;
+}
+
+.HubPage--sortBy {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.HubPage--sortBy > *:not(:last-child) {
+  margin-right: var(--space-medium);
+}
+
+.HubPage--sortBy > *:not(:first-child) {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+}
+
+.HubPage--sportsCards {
+  padding: var(--space-big);
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.HubPage--sportsCards > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+@media (max-width: 1024px) {
+  .HubPage--right-FiltersButton {
+    align-items: center;
+    display: block;
+  }
+
+  .HubPage--left {
+    display: none;
+  }
+}

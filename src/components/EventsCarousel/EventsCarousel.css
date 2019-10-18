@@ -1,0 +1,20 @@
+.EventsCarousel--container {
+  /* max-width: 1250px; */
+  /* width: 100%; */
+}
+
+.EventsCarousel-carousel {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.EventsCarousel--cardCotainer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.EventsCarousel--cardCotainer > * {
+  border: 2px solid #ffffff;
+}

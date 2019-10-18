@@ -1,0 +1,25 @@
+.Player--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Player--container > img {
+  width: 167px;
+  height: 167px;
+  border-radius: 50%;
+}
+
+.Player--container > * {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Player--container > *:last-child {
+  margin-bottom: 0;
+}
+
+.Player--hidden {
+  visibility: hidden;
+}

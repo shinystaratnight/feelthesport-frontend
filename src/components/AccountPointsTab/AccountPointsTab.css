@@ -1,0 +1,37 @@
+.AccountPointsTab--container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-big) var(--space-big);
+}
+
+.AccountPointsTab--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountPointsTab--container > *:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-small);
+  background-color: var(--color-lightOrange);
+}
+
+.AccountPointsTab--row > * {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3.5fr 2.5fr 2.5fr 3.5fr;
+  align-items: start;
+  grid-gap: var(--space-medium);
+  padding-bottom: var(--space-small);
+  padding-top: var(--space-small);
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.AccountPointsTab--row > *:first-child > * {
+  font-weight: 500;
+}
+
+.AccountPointsTab--container > *:last-child {
+  cursor: pointer;
+  align-self: center;
+}

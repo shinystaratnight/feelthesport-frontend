@@ -1,0 +1,36 @@
+.Dialog--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--space-medium) var(--space-medium) var(--space-medium);
+  background-color: var(--color-white);
+  max-width: 700px;
+}
+
+.Dialog--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.Dialog--container > *:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-small);
+}
+
+.Dialog--container > *:last-child > *:nth-child(2) {
+  margin-left: var(--space-medium);
+}
+
+.Dialog--info {
+  width: 115px;
+  height: 115px;
+}
+
+.Dialog--warn {
+  width: 137px;
+  height: 105px;
+}

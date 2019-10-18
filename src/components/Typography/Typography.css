@@ -1,0 +1,148 @@
+.Typography--container {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  transition: color 0.25s ease-in-out;
+}
+
+.Typography--type--title1 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.Typography--type--title2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.Typography--type--subtitle1 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.Typography--type--subtitle2 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.Typography--type--subtitle3 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.Typography--type--subtitle4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Typography--type--button1 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.Typography--type--button2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.Typography--type--button3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Typography--type--button4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Typography--type--text1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Typography--type--text2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.Typography--type--text3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.Typography--color-white {
+  color: var(--color-white);
+}
+.Typography--color-black {
+  color: var(--color-black);
+}
+.Typography--color-gray {
+  color: var(--color-gray);
+}
+.Typography--color-lightOrange {
+  color: var(--color-lightOrange);
+}
+.Typography--color-darkOrange {
+  color: var(--color-darkOrange);
+}
+.Typography--color-blue {
+  color: var(--color-blue);
+}
+.Typography--color-green {
+  color: var(--color-green);
+}
+
+@media (min-width: 768px) {
+  .Typography--type--title1 {
+    font-size: 48px;
+  }
+  .Typography--type--title2 {
+    font-size: 40px;
+  }
+  .Typography--type--subtitle1 {
+    font-size: 36px;
+  }
+  .Typography--type--subtitle2 {
+    font-size: 30px;
+  }
+  .Typography--type--subtitle3 {
+    font-size: 26px;
+  }
+  .Typography--type--subtitle4 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .Typography--type--button1 {
+    font-size: 28px;
+  }
+  .Typography--type--button2 {
+    font-size: 28px;
+  }
+  .Typography--type--button3 {
+    font-size: 24px;
+  }
+  .Typography--type--button4 {
+    font-size: 18px;
+  }
+  .Typography--type--text1 {
+    font-size: 20px;
+  }
+  .Typography--type--text2 {
+    font-size: 16px;
+  }
+  .Typography--type--text3 {
+    font-size: 14px;
+  }
+}

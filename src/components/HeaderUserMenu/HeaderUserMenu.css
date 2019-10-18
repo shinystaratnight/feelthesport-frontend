@@ -1,0 +1,62 @@
+.HeaderUserMenu--container {
+  position: relative;
+  /* padding: 0 20px; */
+}
+
+.HeaderUserMenu--top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.HeaderUserMenu--top > *:not(:last-child) {
+  margin-right: var(--space-small);
+}
+
+.HeaderUserMenu--top > img {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #f05327;
+  border-radius: 50%;
+}
+
+.HeaderUserMenu--arrowUp {
+  width: 22px;
+  height: 15px;
+  cursor: pointer;
+}
+.HeaderUserMenu--arrowDown {
+  width: 22px;
+  height: 15px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.HeaderUserMenu--bottom {
+  width: 100%;
+
+  position: absolute;
+  z-index: 10;
+  background-color: var(--color-black);
+}
+
+.HeaderUserMenu--list {
+  list-style: none;
+  padding: var(--space-small) var(--space-medium);
+}
+
+.HeaderUserMenu--listItem {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.HeaderUserMenu--listItem:hover {
+  color: var(--color-lightOrange);
+}
+
+.HeaderUserMenu--list > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}

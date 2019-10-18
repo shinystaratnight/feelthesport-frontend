@@ -1,0 +1,9 @@
+.EventCardInfo--text {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .EventCardInfo--text {
+    font-size: 16px;
+  }
+}

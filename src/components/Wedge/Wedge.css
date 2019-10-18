@@ -1,0 +1,25 @@
+.Wedge--type1--topBlack--bottomWhite {
+  height: 150px;
+  background: linear-gradient(to right bottom, #19191b 49%, #fff 50%),
+    linear-gradient(-50deg, #fff 16px, #19191b 0);
+}
+
+.Wedge--type2--topBlack--bottomWhite {
+  height: 150px;
+  transform: rotateX(180deg);
+  background: linear-gradient(to right bottom, #19191b 49%, #fff 50%),
+    linear-gradient(-50deg, #fff 16px, #19191b 0);
+}
+
+.Wedge--type1--topWhite--bottomBlack {
+  height: 150px;
+  background: linear-gradient(to right bottom, #fff 49%, #19191b 50%),
+    linear-gradient(-50deg, #19191b 16px, #fff 0);
+}
+
+.Wedge--type2--topWhite--bottomBlack {
+  height: 150px;
+  transform: rotateX(180deg);
+  background: linear-gradient(to right bottom, #fff 49%, #19191b 50%),
+    linear-gradient(-50deg, #19191b 16px, #fff 0);
+}

@@ -1,0 +1,62 @@
+.Input--container {
+  display: inline-flex;
+}
+
+.Input--container > input {
+  font-size: 16px;
+  padding: 5px;
+}
+.Input--container > textarea {
+  font-size: 16px;
+  padding: 5px;
+  resize: vertical;
+  min-height: 33px;
+  max-height: 400px;
+}
+
+.Input--label--top,
+.Input--label--bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Input--label--right,
+.Input--label--left {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Input--label--right > *:first-child {
+  order: 2;
+}
+.Input--label--right > input {
+  order: 1;
+}
+.Input--label--right > textarea {
+  order: 1;
+}
+.Input--label--bottom > *:first-child {
+  order: 2;
+  align-self: center;
+}
+.Input--label--bottom > input {
+  order: 1;
+}
+.Input--label--bottom > textarea {
+  order: 1;
+}
+
+.Input--label--top > *:first-child {
+  margin-bottom: 5px;
+}
+.Input--label--right > *:first-child {
+  margin-left: 15px;
+}
+.Input--label--bottom > *:first-child {
+  margin-top: 15px;
+}
+.Input--label--left > *:first-child {
+  margin-right: 15px;
+}

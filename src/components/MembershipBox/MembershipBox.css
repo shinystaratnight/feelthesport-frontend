@@ -1,0 +1,42 @@
+.MembershipBox--container {
+  border: 5px solid var(--color-lightOrange);
+}
+
+.MembershipBox--container > *:last-child > * > * {
+  padding: var(--space-medium) var(--space-big);
+}
+
+.MembershipBox--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-lightOrange);
+  height: 72px;
+  padding: var(--space-medium) var(--space-big);
+}
+
+.MembershipBox--title > *:last-child {
+  cursor: pointer;
+}
+
+.MembershipBox--membershipList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.MembershipBox--membershipList > *:not(:last-child) {
+  border-bottom: 3px solid #ebe8e8;
+}
+
+.MembershipBox--membership {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+}

@@ -1,0 +1,72 @@
+.TabNav--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid #ebe8e8;
+  user-select: none;
+  padding: var(--space-medium) var(--space-big) !important;
+  margin-bottom: 0 !important;
+}
+
+.TabNav--container > * {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.TabNav--container > *:not(:last-child) {
+  margin-right: var(--space-huge);
+}
+
+.TabNav--activeTab {
+  border-bottom: 5px solid var(--color-darkOrange);
+  padding-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .TabNav--container > *:not(:last-child) {
+    margin-right: var(--space-big);
+  }
+}
+
+@media (max-width: 1024px) {
+  .TabNav--container {
+    justify-content: space-between;
+  }
+
+  .TabNav--container > * {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 930px) {
+  .TabNav--container > *:not(:last-child) {
+    margin-right: var(--space-medium);
+  }
+}
+
+@media (max-width: 860px) {
+  .TabNav--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: var(--space-small);
+  }
+
+  .TabNav--container > *:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .TabNav--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TabNav--container > *:not(:last-child) {
+    margin-bottom: var(--space-small);
+  }
+}

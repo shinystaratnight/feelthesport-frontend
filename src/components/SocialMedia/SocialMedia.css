@@ -1,0 +1,23 @@
+.SocialMedia--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SocialMedia--container > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.SocialMedia--icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}

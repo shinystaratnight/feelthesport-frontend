@@ -1,0 +1,12 @@
+.PlayersTab--players {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-row-gap: var(--space-big);
+  grid-column-gap: var(--space-big);
+}
+
+@media (max-width: 350px) {
+  .PlayersTab--players {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}

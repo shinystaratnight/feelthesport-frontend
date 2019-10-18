@@ -1,0 +1,34 @@
+.AccountClubsTab--container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-big) var(--space-big);
+}
+
+.AccountClubsTab--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountClubsTab--card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-medium) var(--space-small);
+  border-bottom: 2px solid #ebe8e8;
+}
+
+.AccountClubsTab--card > *:first-child {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 147px;
+}
+.AccountClubsTab--card > *:first-child > button {
+  width: 180px;
+}
+
+.AccountClubsTab--card > img {
+  width: 147px;
+  height: 147px;
+}

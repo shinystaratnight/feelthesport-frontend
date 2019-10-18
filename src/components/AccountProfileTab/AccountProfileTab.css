@@ -1,0 +1,84 @@
+.AccountProfileTab--container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-big) var(--space-big);
+}
+
+.AccountProfileTab--container > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountProfileTab--container > *:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.AccountProfileTab--profilePhoto {
+  margin-bottom: var(--space-huge);
+}
+.AccountProfileTab--profilePhoto > *:first-child > *:first-child {
+  margin-bottom: var(--space-medium);
+}
+.AccountProfileTab--profilePhoto > *:first-child > *:last-child {
+  margin-top: var(--space-small);
+}
+
+.AccountProfileTab--profilePhoto > *:last-child {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--color-red);
+  border-radius: 50%;
+}
+
+.AccountProfileTab--mainInformation > *:first-child {
+  padding-bottom: var(--space-small);
+  border-bottom: 1px solid #ebe8e8;
+  margin-bottom: var(--space-medium);
+}
+
+.AccountProfileTab--mainInformation > *:nth-child(2),
+.AccountProfileTab--mainInformation > *:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--space-medium);
+}
+.AccountProfileTab--mainInformation > *:nth-child(2) > *:first-child,
+.AccountProfileTab--mainInformation > *:nth-child(3) > *:first-child {
+  margin-right: var(--space-huge);
+}
+
+.AccountProfileTab--mainInformation > *:last-child > *:first-child {
+  margin-bottom: var(--space-small);
+}
+
+.AccountProfileTab--mainInformation
+  > *:last-child
+  > *:last-child
+  > *:not(:last-child) {
+  margin-right: var(--space-medium);
+}
+
+.AccountProfileTab--changePassword {
+  display: flex;
+  flex-direction: column;
+}
+
+.AccountProfileTab--changePassword > *:first-child {
+  padding-bottom: var(--space-small);
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.AccountProfileTab--changePassword > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountProfileTab--container input {
+  width: 323px;
+  height: 47px;
+}
+
+.AccountProfileTab--container button {
+  width: 180px;
+}

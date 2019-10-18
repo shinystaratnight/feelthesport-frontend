@@ -1,0 +1,16 @@
+.AccountHistoryTab--container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-big) var(--space-big);
+}
+
+.AccountHistoryTab--container > *:first-child {
+  margin-bottom: var(--space-medium);
+}
+
+.AccountHistoryTab--container > *:last-child {
+  align-self: center;
+  cursor: pointer;
+  margin-top: var(--space-medium);
+  user-select: none;
+}

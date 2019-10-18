@@ -1,0 +1,12 @@
+.CoinsPoints--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.CoinsPoints--container > svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}

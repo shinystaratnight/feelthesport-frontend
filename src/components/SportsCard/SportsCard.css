@@ -1,0 +1,74 @@
+.SportsCard--container {
+  display: grid;
+  grid-template-areas:
+    "name         name          .             rating"
+    "placeDirections  placeDirections   .     sport"
+    "location     location      .             ."
+    "court        timings       timings       timings"
+    "image        description   description   description"
+    "image        description   description   description"
+    "image        description   description   description"
+    "image        .             .             ."
+    "cost         .             details       register";
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  justify-items: start;
+  width: 855px;
+  /* height: 502px; */
+  height: calc(502px + var(--space-small));
+  padding-bottom: var(--space-small) !important;
+  padding: 0;
+  /* padding-bottom: 50px; */
+  border-bottom: 3px solid #ebe8e8;
+  background-color: var(--color-white);
+}
+.SportsCard--name {
+  grid-area: name;
+}
+.SportsCard--rating {
+  grid-area: rating;
+  justify-self: end;
+}
+
+.SportsCard--placeDirections {
+  grid-area: placeDirections;
+  display: flex;
+  flex-direction: row;
+}
+
+.SportsCard--placeDirections > *:first-child {
+  margin-right: var(--space-medium);
+}
+
+.SportsCard--location {
+  grid-area: location;
+}
+.SportsCard--sport {
+  grid-area: sport;
+  justify-self: center;
+}
+.SportsCard--court {
+  grid-area: court;
+}
+.SportsCard--timings {
+  grid-area: timings;
+  justify-self: center;
+}
+.SportsCard--image {
+  grid-area: image;
+}
+.SportsCard--description {
+  grid-area: description;
+}
+.SportsCard--cost {
+  grid-area: cost;
+}
+.SportsCard--details {
+  grid-area: details;
+  justify-self: center;
+}
+.SportsCard--register {
+  grid-area: register;
+  justify-self: center;
+}

@@ -1,0 +1,39 @@
+.SkewedRectangle--container {
+  width: 100%;
+  min-height: 100px;
+}
+
+.SkewedRectangle--topWhite--bottomBlack {
+  transform: rotateX(180deg);
+  background: linear-gradient(to right bottom, #19191b 49%, #fff 50%),
+    linear-gradient(-50deg, #fff 16px, #19191b 0);
+}
+
+.SkewedRectangle--topBlack--bottomWhite {
+  /* transform: rotateX(180deg); */
+  background: linear-gradient(to right bottom, #19191b 49%, #fff 50%),
+    linear-gradient(-50deg, #fff 16px, #19191b 0);
+}
+
+.SkewedRectangle--topTransparent--bottomWhite {
+  background: linear-gradient(to right bottom, #ffffff00 49%, #fff 50%),
+    url("../../assets/images/bg.jpg");
+  /* transform: translateY(-48%); */
+  /* background: linear-gradient(
+    to left,
+    rgba(60, 59, 59, 0.4),
+    rgba(66, 66, 66, 0.4)
+  ),
+  url("../../assets/images/bg.jpg"); */
+  background-size: cover;
+  background-position: 40% 95%;
+}
+
+/* .SkewedRectangle--topBlack--bottomWhite{
+transperant and relative
+position: relative;
+left: 0px;
+background: linear-gradient(to right bottom, #ffffff00 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #fffcfc00 0);
+  top: -30px;
+  transform: translateY(-48%);
+} */

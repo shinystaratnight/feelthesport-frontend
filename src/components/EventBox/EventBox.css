@@ -1,0 +1,110 @@
+.EventBox--container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  text-align: start;
+  padding: var(--space-big) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .EventPage--container > main > section > * {
+  padding: var(--space-big) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.EventPage--container > main > section > * > *:not(:last-child) {
+  margin-bottom: var(--space-big);
+} */
+
+.EventBox--container > * {
+  /* padding: var(--space-big) !important;
+  display: flex;
+  flex-direction: column; */
+}
+
+.EventBox--container > *:not(:last-child) {
+  margin-bottom: var(--space-big);
+  /* background-color: red; */
+}
+
+.EventBox--bold {
+  font-weight: bold;
+}
+
+.EventBox--image {
+  /* width: 273px; */
+  width: 100%;
+  height: auto;
+  align-self: center;
+  cursor: pointer;
+}
+
+.EventBox--stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.EventBox--stats > div > * {
+  margin-right: var(--space-tiny);
+}
+.EventBox--stats > div > *:last-child {
+  margin-right: 0;
+}
+
+.EventBox--invite {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.EventBox--invite > *:first-child {
+  margin-right: var(--space-big);
+}
+
+.EventBox--invite > div > * {
+  margin-right: var(--space-tiny);
+}
+.EventBox--invite > div > *:last-child {
+  margin-right: 0;
+}
+
+.EventBox--complex {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+
+.EventBox--complex > * {
+  margin-bottom: var(--space-small);
+}
+.EventBox--complex > *:last-child {
+  margin-bottom: 0;
+}
+
+.EventBox--socialIcons {
+  height: 45px;
+  width: 45px;
+}
+
+/* @media (min-width: 425px) {
+  .EventBox--image {
+    width: 546px;
+    height: 237px;
+  }
+}
+
+@media (min-width: 768px) {
+  .EventBox--image {
+    width: 1092px;
+    height: 473px;
+  }
+} */

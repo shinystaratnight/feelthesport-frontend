@@ -1,0 +1,20 @@
+.FiltersCheckbox--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.FiltersCheckbox--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-small);
+  padding: var(--space-tiny);
+}
+
+.FiltersCheckbox--list > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.FiltersCheckbox--list ~ * {
+  display: inline-block;
+  cursor: pointer;
+}

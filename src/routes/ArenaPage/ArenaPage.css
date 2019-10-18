@@ -1,0 +1,69 @@
+.ArenaPage--container {
+  background-color: var(--color-lightGray);
+  padding: var(--space-big) var(--space-huge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* flex-grow: 1; */
+  min-height: 100vh;
+}
+
+.ArenaPage--container > main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.ArenaPage--container > main > * {
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  padding: var(--space-medium);
+}
+
+.ArenaPage--container > main > *:not(:last-child) {
+  margin-bottom: var(--space-medium);
+}
+
+.ArenaPage--container > main > *:not(:first-child) {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ArenaPage--header {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.ArenaPage--container > main > section {
+  padding: 0;
+}
+
+.ArenaPage--container > main > section > * {
+  padding: var(--space-big) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.ArenaPage--container > main > section > * > *:not(:last-child) {
+  margin-bottom: var(--space-big);
+}
+/* 
+@media (max-width: 425px) {
+  .ArenaPage--container > main > section > * {
+    padding: var(--space-tiny) !important;
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+@media (max-width: 768px) {
+  .ArenaPage--categoryHeader {
+    font-size: 30px;
+    word-wrap: break-word;
+  }
+}

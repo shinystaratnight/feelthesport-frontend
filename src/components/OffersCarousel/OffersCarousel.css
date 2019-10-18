@@ -1,0 +1,28 @@
+.OffersCarousel--container {
+  /* max-width: 1250px; */
+   width: 100%;
+  /* max-width: 80vw; */
+}
+
+.OffersCarousel-carousel {
+  max-width: 80vw;
+    margin: auto;
+}
+
+.OffersCarousel--cardCotainer {
+  /*
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+   */
+}
+
+.OffersCarousel--image {
+  width: 100%;
+  /*  max-width: 100%;*/
+  /* max-width: 561px; */
+  /*  max-height: 247px;
+    /* min-width: 256px; */
+  /* min-height: 105px; */
+}

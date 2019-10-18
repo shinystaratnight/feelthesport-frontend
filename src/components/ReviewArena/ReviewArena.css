@@ -1,0 +1,34 @@
+.ReviewArena--container {
+  padding: var(--space-medium);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  width: 90vw;
+  max-width: 800px;
+  background-color: var(--color-white);
+}
+
+.ReviewArena--container > *:not(:last-child) {
+  margin-bottom: var(--space-small);
+}
+
+.ReviewArena--container > *:not(:last-child) > * {
+  width: 100%;
+}
+
+.ReviewArena--container > *:first-child {
+  border-bottom: 3px solid #ebe8e8;
+  padding-bottom: var(--space-small);
+  /* padding: 0 var(--space-medium) var(--space-medium) var(--space-medium); */
+}
+
+.ReviewArena--container > *:last-child {
+  align-self: flex-end;
+}
+
+.ReviewArena--star {
+  height: 30px;
+  width: 30px !important;
+  margin-right: 15px;
+  cursor: pointer;
+}
