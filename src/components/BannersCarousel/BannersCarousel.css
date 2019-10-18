@@ -63,6 +63,14 @@
  }
 }
 
+@media (max-width: 425px) {
+  .Banners--dots > * > * {
+    height: 7px;
+    width: 7px;
+  }
+ }
+ 
+
 @media (max-width: 500px) {
  .Banners--dots {
    top: 90%;
