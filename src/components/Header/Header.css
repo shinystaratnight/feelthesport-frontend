@@ -92,7 +92,7 @@
 
 .Header--offersIcon > *:last-child {
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
