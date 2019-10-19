@@ -22,6 +22,7 @@
 .EventsCard1--image {
   grid-area: image;
   height: 100%;
+  max-height: 207px;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
