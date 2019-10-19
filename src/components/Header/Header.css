@@ -3,6 +3,7 @@
 }
 .Header--container > .Header--top{
   padding: var(--space-small) var(--space-huge);
+  padding-right: var(--space-small);
 }
 .Header--container > .Header--bottom{
   padding: var(--space-tiny) var(--space-sm-huge);
