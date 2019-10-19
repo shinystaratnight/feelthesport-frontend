@@ -78,6 +78,15 @@
     min-width: 120px;
   }
 }
+
+@media (max-width: 470px) {
+  .city-select-box {
+    width: 44%;
+    margin: 7px 3%;
+    padding: 6px;
+  }
+}
+
 .city-select-box.its_selected{
   background: var(--color-lightOrange);
   color: white;
