@@ -248,7 +248,7 @@ export default connect(
             onClick={() => handleSportModalDispatcher(true)}
           >
             <img src={ShootBallIcon} alt="select sport" />
-            <span className="hide-on-mobile"> {selected_sport ? selected_sport : "Select Sport"}</span>
+            <span> {selected_sport ? selected_sport : "Select Sport"}</span>
           </button>
         </div>
         <div className="Header--right">

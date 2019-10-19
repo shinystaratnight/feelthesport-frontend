@@ -164,6 +164,33 @@
   .Header--container > .Header--bottom{
     padding: var(--space-small) var(--space-medium);
   }
+
+  .Header--top .Header--left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "image city" "image sport";
+    grid-gap: 3px;
+  }
+
+  .Header--top .Header--left > a {
+    grid-area: image;
+  }
+
+  .Header--top .Header--left button span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .Header--top .Header--left > button:first-of-type {
+    width: 100%;
+    grid-area: city;
+  }
+
+  .Header--top .Header--left > button:last-child {
+    width: 100%;
+    grid-area: sport;
+  }
 }
 
 
