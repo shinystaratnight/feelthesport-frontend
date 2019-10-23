@@ -206,7 +206,7 @@ export default connect(
       <Modal
         isOpen={cityModalOpen}
         closeHandler={() => handleCityModalDispatcher(false)}
-        overflow="visible"
+        overflow="auto"
       >
         <SelectCity
           cities={cities || []}
@@ -219,7 +219,7 @@ export default connect(
       <Modal
         isOpen={sportModalOpen}
         closeHandler={() => handleSportModalDispatcher(false)}
-        overflow="visible"
+        overflow="auto"
       >
         <SelectSport
           sportCategories={sports || []}
