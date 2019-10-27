@@ -138,4 +138,16 @@ export default function EventCard({
       </div>
     );
   }
+
+  if (type === 3) {
+    return (
+      <div className="EventsCard1--container EventsCard3--type">
+        <img src={Pic} alt="card pic" className="EventsCard1--image" />
+        <div className="EventsCard2--name">
+          <p className="fnt-text1 fnt-bold fgc-white">Coming Soon</p>
+          <p className="fnt-text3 fgc-white">Event Cards are coming soon.</p>
+        </div>
+      </div>
+    );
+  }
 }

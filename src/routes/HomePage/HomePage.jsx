@@ -53,6 +53,21 @@ export default connect(
   //const [sportValue, setSportValue] = useState(localStorage.getItem("userSport"));
   if (apiLoading || !siteInfo) return <div className="ArenaPage--container" />;
 
+  let renderViewAll = () => {
+    if (events.length > 3) {
+      return (
+        <Link
+          to="/events/"
+          className="btn btn3 fnt-button3 bgc-black brdc-white fgc-white btn-skewed fnt-noline"
+        >
+          <span>View all</span>
+        </Link>
+      );
+    } else {
+      return <span></span>;
+    }
+  }
+
   //if (apiError) return <Redirect to="/404" />;
   return (
     <div className="HomePage--container">
@@ -115,12 +130,9 @@ export default connect(
           </p>
         </div>
         <EventsCarousel events={events} />
-        <Link
-          to="/events/"
-          className="btn btn3 fnt-button3 bgc-black brdc-white fgc-white btn-skewed fnt-noline"
-        >
-          <span>View all</span>
-        </Link>
+        {/* render "View All" button if the number of event cards is not less than 3 */}
+        {renderViewAll()}
+
       </div>
       <div className="HomePage--offers" id="offers">
         <h3 className="fnt-title1 fgc-lightOrange">BEST OFFERS</h3>

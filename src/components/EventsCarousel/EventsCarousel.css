@@ -18,3 +18,75 @@
 .EventsCarousel--cardCotainer > * {
   border: 2px solid #ffffff;
 }
+
+/* When there two event cards -- */
+.EventsCarousel--container.EventCards--2 > .EventsCarousel-carousel {
+  display: none;
+}
+
+.EventsCarousel--container.EventCards--2 > .EventsCarousel-carousel:first-child {
+  display: block;
+}
+
+/* When there is only one event card -- */
+.EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel {
+  display: none;
+}
+
+.EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:first-child {
+  display: block;
+}
+
+/* When there is no event card -- */
+.EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel {
+  display: none;
+}
+
+.EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:first-child {
+  display: block;
+}
+
+/* Two event cards should be displayed on  width < 1360 devices */
+@media (max-width: 1360px) {
+  .EventsCarousel--container.EventCards--2 > .EventsCarousel-carousel:first-child {
+    display: none;
+  }
+  .EventsCarousel--container.EventCards--2 > .EventsCarousel-carousel:last-child {
+    display: block;
+  }
+
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(1),
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(3) {
+    display: none;
+  }
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(2) {
+    display: block;
+  }
+
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(1),
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(3) {
+    display: none;
+  }
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(2) {
+    display: block;
+  }
+}
+
+/* Only one event card must be shown on small devices */
+@media (max-width: 910px) {
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(1),
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(2) {
+    display: none;
+  }
+  .EventsCarousel--container.EventCards--1 > .EventsCarousel-carousel:nth-child(3) {
+    display: block;
+  }
+
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(1),
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(2) {
+    display: none;
+  }
+  .EventsCarousel--container.EventCards--0 > .EventsCarousel-carousel:nth-child(3) {
+    display: block;
+  }
+}
